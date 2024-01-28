@@ -21,6 +21,9 @@ class MainActivity : ComponentActivity() {
 
     }
 
+    /**
+     * A lifecycle observer to track lifecycle events
+     */
     private fun initiateLifecycleObserver() {
         val lifeCycleObserver = LifecycleEventObserver { _, event ->
             when (event) {

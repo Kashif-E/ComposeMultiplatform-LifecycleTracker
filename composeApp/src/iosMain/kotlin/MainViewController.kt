@@ -4,6 +4,9 @@ import lifecycleRegistry.LifecycleRegistry
 import lifecycleRegistry.lifecycleCallBack
 
 fun MainViewController() = ComposeUIViewController(configure = {
+    /**
+     * A delegate to track composeViewControllers lifecycle callbacks
+     */
     delegate = object : ComposeUIViewControllerDelegate {
         override fun viewDidAppear(animated: Boolean) {
             super.viewDidAppear(animated)
